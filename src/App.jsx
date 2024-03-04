@@ -53,7 +53,7 @@ const route = createBrowserRouter([
       </ProtectedRoute>,
     children: [
       {
-        path: '/dashboard/9693f436-a4d0-460a-a390-e978859e04a7',
+        path: '/dashboard',
         element: <Dashboard />
       },
       {

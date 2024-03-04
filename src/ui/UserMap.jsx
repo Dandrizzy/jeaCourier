@@ -7,7 +7,6 @@ import {
 import "leaflet/dist/leaflet.css";
 
 import styles from "./Map.module.css";
-import { useState } from "react";
 import { useGetSpecificApi } from "../Hooks/GetSpecific/useGetSpecificApi";
 import { useGetSpecific } from "../Hooks/GetSpecific/useGetSpecific";
 import Spinner from "./Spinner";
@@ -18,14 +17,13 @@ function UserMap() {
   const { getSpecific } = useGetSpecificApi({ key: 'position', ticketId });
 
   const { data = [], isFetching } = useGetSpecific({ key: ['position', ticketId], fn: getSpecific });
-  const [mapPosition] = useState([data.data.lat, data.data.lng]);
 
   if (isFetching) return <Spinner />;
 
   return (
     <div className={styles.mapContainer + ' relative'}>
       <MapContainer
-        center={mapPosition}
+        center={[data?.data?.lat, data?.data?.lng]}
         zoom={4}
         doubleClickZoom={false}
         scrollWheelZoom={false}
@@ -37,7 +35,7 @@ function UserMap() {
         />
 
         <Marker
-          position={mapPosition}
+          position={[data?.data?.lat, data?.data?.lng]}
         >
           <Popup className=" bg-blue-200">
             <span>Current location</span>

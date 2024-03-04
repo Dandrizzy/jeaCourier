@@ -16,18 +16,20 @@ const FullPage = styled.div`
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
 
+  console.log(user);
+
   // 1. Load the authenticated user
-  const { isLoading, isAuthenticated } = useUser();
+  const { isLoading, isAuthenticated, user } = useUser();
 
   // 2. If there is NO authenticated user, redirect to the /login
   useEffect(
     function () {
-      if (!isAuthenticated && !isLoading) {
+      if (!isAuthenticated && !isLoading && !user) {
         navigate("/");
         toast.error('Please log in first!');
       }
     },
-    [isAuthenticated, isLoading, navigate]
+    [isAuthenticated, isLoading, navigate, user]
   );
 
   // 3. While loading, show a spinner
@@ -39,7 +41,7 @@ function ProtectedRoute({ children }) {
     );
 
   // 4. If there IS a user, render the app
-  if (isAuthenticated) return children;
+  if (isAuthenticated && user?.email === 'jyong5057@gmail.com') return children;
 }
 
 export default ProtectedRoute;
