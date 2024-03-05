@@ -11,7 +11,9 @@ const Messages = () => {
  const { fetch: messages, isFetching } = useGet({ key: ['chats'], fn: fetch });
 
  if (isFetching) return <Spinner />;
- const allMsg = groupMessagesByChatId(messages);
+ const msg = messages.filter(m => m.admin === 'jea');
+
+ const allMsg = groupMessagesByChatId(msg);
 
  // console.log(allMsg[0].messages);
 

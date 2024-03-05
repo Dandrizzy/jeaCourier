@@ -39,7 +39,7 @@ const Admin = () => {
 
    {filteredData.map(item => {
     return (
-     <div key={item.id} className=" p-2 gap-2  grid grid-cols-2 md:grid-cols-5 [&>*]:overflow-x-clip even:bg-neutral-200"  >
+     <div key={item.id} className=" p-2 gap-2  grid grid-cols-2 md:grid-cols-5 [&>*]:overflow-x-clip even:bg-neutral-200 uppercase"  >
       <div className="hidden md:block"> {item.name}</div>
       <div className="hidden md:block">{item.sCountry}</div>
       {/* <div className="">{item.sAddress}</div>

@@ -25,7 +25,6 @@ const CreateForm = () => {
 
 
  const onSubmit = data => {
-  console.log(data);
   create({ ...data, receiveDate, deliveryDate, author: 'jea' }, {
    onSuccess: () => {
     reset();
