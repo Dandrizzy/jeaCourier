@@ -2,12 +2,10 @@ import { MdDashboard, MdMessage } from 'react-icons/md';
 
 import { useNavigate } from 'react-router-dom';
 import Logout from '../Features/authentication/Logout';
-import { useUser } from '../Features/authentication/useUser';
 
 
 const Nav = () => {
 
- const { user } = useUser();
 
  const navigate = useNavigate();
 
@@ -18,7 +16,7 @@ const Nav = () => {
    <ul className=" lg:text-lg [&>*]:cursor-pointer text-xs sm:text-base flex justify-between">
     <li
      className=' hover:bg-neutral-200/20 transition-all duration-300 rounded-full p-2 flex items-center justify-center gap-1' onClick={() => {
-      navigate(`/dashboard/${user?.id}`);
+      navigate(`/dashboard}`);
      }}>
      <MdDashboard />
      <span>Dashboard</span>
