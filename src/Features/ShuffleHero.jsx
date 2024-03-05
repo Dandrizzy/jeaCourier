@@ -9,7 +9,7 @@ const ShuffleHero = () => {
      Better every day
     </span>
     <h3 className="text-4xl text-neutral-100 md:text-6xl font-semibold">
-     Fest Link
+     Fest Link Diplomat
     </h3>
     <p className="text-base md:text-lg text-neutral-100 my-4 md:my-6">
      Track shipment / Find and ship a product using Alpha code
