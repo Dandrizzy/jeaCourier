@@ -45,43 +45,43 @@ const shuffle = (array) => {
 const squareData = [
  {
   id: 1,
-  src: "/3.jpg",
+  src: "/01.JPG",
  },
  {
   id: 2,
-  src: "/5.jpg",
+  src: "/02.JPG",
  },
  {
   id: 3,
-  src: '/05.jpg'
+  src: '/03.JPG'
  },
  {
   id: 4,
-  src: '/6.jpg'
+  src: '/04.JPG'
  },
  {
   id: 5,
-  src: '/8.jpg'
+  src: '/06.JPG'
  },
  {
   id: 6,
-  src: '/12.jpg'
+  src: '/07.JPG'
  },
  {
   id: 7,
-  src: '/air.jpg'
+  src: '/08.JPG'
  },
  {
   id: 8,
-  src: '/4.png'
+  src: '/09.JPG'
  },
  {
   id: 9,
-  src: '/7.png'
+  src: '/010.JPG'
  },
  {
   id: 10,
-  src: '/3.jpg'
+  src: '/011.JPG'
  },
  {
   id: 11,
@@ -91,22 +91,22 @@ const squareData = [
   id: 12,
   src: '/05.jpg'
  },
- // {
- //  id: 13,
- //  src: '/fur.jpg'
- // },
- // {
- //  id: 14,
- //  src: '/cute.jpg'
- // },
- // {
- //  id: 15,
- //  src: '/cream.jpg'
- // },
- // {
- //  id: 16,
- //  src: '/mix.jpg'
- // },
+ {
+  id: 13,
+  src: '/3.jpg'
+ },
+ {
+  id: 14,
+  src: '/8.jpg'
+ },
+ {
+  id: 15,
+  src: '/5.jpg'
+ },
+ {
+  id: 16,
+  src: '/12.jpg'
+ },
 ];
 
 const generateSquares = () => {
