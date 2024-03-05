@@ -25,7 +25,7 @@ const AdminChatBot = ({ id }) => {
 
  function onSubmit(data) {
   if (!data) return;
-  createChat({ ...data, sender: 'admin', chatId: id });
+  createChat({ ...data, sender: 'admin', chatId: id, admin: 'jea' });
   reset();
  }
 
