@@ -51,9 +51,9 @@ const Admin = () => {
       <div className="">{item.rPhone}</div>
       <div className="">{item.rEmail}</div> */}
       <Flex gap="3">
-       <Button onClick={() => navigate(`/mail/${item.ticketId}`)} color="indigo" variant="solid">
+       {/* <Button onClick={() => navigate(`/mail/${item.ticketId}`)} color="indigo" variant="solid">
         Mail
-       </Button>
+       </Button> */}
        <Button onClick={() => navigate(`/ticket/${item.ticketId}`)} color="indigo" variant="soft">
         Show
        </Button>
