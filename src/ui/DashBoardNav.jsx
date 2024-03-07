@@ -10,7 +10,7 @@ const Nav = () => {
  const navigate = useNavigate();
 
  return (
-  <div className=" items-center flex justify-between p-4 bg-blue-700 text-slate-100">
+  <div className=" items-center flex justify-between p-4 bg-gray-400 text-slate-100">
    <img onClick={() => navigate('/')} src='/ve.png' alt='Logo' className=' h-12 bg-zinc-100 p-2 rounded-full' />
 
    <ul className=" lg:text-lg [&>*]:cursor-pointer text-xs sm:text-base flex justify-between">

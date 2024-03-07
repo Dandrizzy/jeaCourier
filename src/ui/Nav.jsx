@@ -17,7 +17,7 @@ const Nav = () => {
 
 
   return (
-    <div className=" hidden items-center md:grid grid-cols-2 p-4 bg-blue-700 text-slate-100">
+    <div className=" hidden items-center md:grid grid-cols-2 p-4 bg-gray-400 text-slate-100">
       <img onClick={() => navigate('/')} src='/ve.png' alt='Logo' className=' h-12 bg-zinc-100 rounded-full' />
 
       <ul className=" lg:text-lg [&>*]:cursor-pointer flex justify-between">
